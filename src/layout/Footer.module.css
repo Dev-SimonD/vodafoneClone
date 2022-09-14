@@ -1,0 +1,28 @@
+.myAccordion {
+  --bs-accordion-bg: none;
+  --bs-accordion-border-color: none;
+}
+.bottomul li {
+  color: #979797;
+  list-style: none;
+}
+.accordion-button:not(.collapsed) {
+  background-color: none;
+}
+.greytext {
+  color: #979797;
+}
+.spojte {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: bold;
+  padding-top: 30px;
+}
+.footerIcons {
+  flex-wrap: wrap;
+}
+.footerIcons div img {
+  height: 40px;
+}
