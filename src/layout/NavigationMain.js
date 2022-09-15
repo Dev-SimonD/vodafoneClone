@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const NavigationMain = () => {
   return (
-    <div className="menuMain">
+    <div className="menuMain position-fixed">
       <div className="container" style={{ paddingInline: "30px" }}>
         <div
           className="d-flex"
@@ -47,7 +47,13 @@ export const NavigationMain = () => {
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body">
+                  <div className="modal-body">
+                    <ul>
+                      <NavLink to="/">home</NavLink>
+                      <NavLink to="/about">about</NavLink>
+                    </ul>
+                  </div>
+                  {/* <div class="modal-body">
                     <div class="accordion container" id="accordionExample">
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
@@ -266,7 +272,7 @@ export const NavigationMain = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                   {/* <div class="modal-footer">
                     <button
                       type="button"
