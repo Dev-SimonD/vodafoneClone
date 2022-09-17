@@ -44,14 +44,14 @@ function TestNavigation() {
           </Button>
         </div>
         <div className={` ${classes.scrollmenu}`}>
-          <a href="#" style={{ position: "relative" }}>
+          <NavLink to="/" style={{ position: "relative" }}>
             Spojte služby<span className={classes.menuSticker}>Nove</span>
-          </a>
-          <a href="#">Tarify</a>
-          <a href="#">Internet</a>
-          <a href="#">Televize</a>
-          <a href="#">Telefony</a>
-          <a href="#">Podpory</a>
+          </NavLink>
+          <NavLink to="/tarify">Tarify</NavLink>
+          <NavLink to="/internet">Internet</NavLink>
+          <NavLink to="/televize">Televize</NavLink>
+          <NavLink to="/telefony">Telefony</NavLink>
+          <NavLink to="/podpora">Podpory</NavLink>
         </div>
       </div>
       <Modal

@@ -2,6 +2,9 @@
   --bs-accordion-bg: none;
   --bs-accordion-border-color: none;
 }
+.bottomul {
+  padding-left: 10px;
+}
 .bottomul li {
   color: #979797;
   list-style: none;
