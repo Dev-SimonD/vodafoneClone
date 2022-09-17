@@ -1,14 +1,11 @@
-.main {
-  background-color: #f4f4f4;
-}
 .scrollmenu {
   /* background-color: #333; */
   overflow: auto;
   white-space: nowrap;
   scrollbar-width: none;
-  padding-top: 76px;
-  background-color: white;
-  border-bottom: 1px solid #d6d6d6;
+  margin-bottom: 20px;
+  padding: 20px;
+  /* border-bottom: 1px solid #d6d6d6; */
 }
 
 .scrollmenu a {
@@ -16,14 +13,10 @@
   color: black;
   text-align: center;
   font-weight: lighter;
-  padding: 14px;
+  margin-inline: 10px;
+  padding: 3px 8px;
   text-decoration: none;
-}
-.viceClankuBtn {
-  padding: 10px;
+  background-color: white;
   border-radius: 10px;
-  margin-bottom: 20px;
-  background: #fff;
-  border: 1px solid #8e8e8d;
-  color: #333;
+  font-size: 14px;
 }

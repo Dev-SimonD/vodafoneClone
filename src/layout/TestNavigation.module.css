@@ -46,3 +46,54 @@
   background-color: white;
   margin: 6px 0;
 }
+.scrollmenu {
+  /* background-color: #333; */
+  overflow: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  padding-top: 76px;
+  background-color: white;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.scrollmenu a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  font-weight: lighter;
+  padding: 14px;
+  text-decoration: none;
+}
+.menuSticker {
+  background-color: #e60000;
+  position: absolute;
+  top: 5px;
+  right: -13px;
+  z-index: 10;
+  padding-top: 2px;
+  padding-bottom: 1px;
+  padding: 3px 7px 2px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  display: inline-block;
+  margin: 0 0 0 3px;
+  color: #fff;
+  border-radius: 10px;
+  line-height: normal;
+  font-family: VodafoneRg, "Arial CE", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+.modalUl {
+  padding-left: 0;
+}
+.modalUl li {
+  padding: 10px 0;
+}
+.modalUl li a {
+  text-decoration: none;
+  color: #484545;
+  font-size: 22px;
+}
+.modalBody {
+  background-color: #f6f6f6;
+}

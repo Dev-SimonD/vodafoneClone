@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #f4f4f4;
+}
 .accordion-button:not(.collapsed) {
   background-color: transparent;
 }
@@ -60,4 +63,12 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.basicBtn {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #8e8e8d;
+  color: #333;
 }

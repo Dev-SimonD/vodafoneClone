@@ -1,0 +1,15 @@
+.card {
+  width: 300px;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 7px 6px -4px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  margin: 30px auto;
+}
+.card div a {
+  color: red;
+  text-decoration: none;
+}
