@@ -20,3 +20,10 @@
   border-radius: 10px;
   font-size: 14px;
 }
+.headerText {
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+}

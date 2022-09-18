@@ -27,3 +27,19 @@
   border: 1px solid #8e8e8d;
   color: #333;
 }
+.headerText {
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+}
+.doporuceneDouble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.doporuceneItem {
+  background-color: white;
+  width: 200px;
+}

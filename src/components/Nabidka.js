@@ -3,7 +3,7 @@ import classes from "./Nabidka.module.css";
 function Nabidka() {
   return (
     <div>
-      <h1 className="text-center pt-5">Vybíráme z naší nabídky</h1>
+      <h1 className={classes.headerText}>Vybíráme z naší nabídky</h1>
       <div className={` ${classes.scrollmenu}`}>
         <a href="#" style={{ backgroundColor: "#007c92", color: "white" }}>
           Doporučujeme

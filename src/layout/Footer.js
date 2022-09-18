@@ -68,12 +68,17 @@ const Footer = () => {
             aria-labelledby="headingEight"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body">
+            <div class={`accordion-body ${classes.footerAccordionBody}`}>
               <ul>
-                <li>nabídky práce</li>
-                <li>poslat životopis</li>
-                <li>práce dle oboru</li>
-                <li>vyberte si zaměstnavatele</li>
+                <li> Roaming</li>
+                <li> Začínáme s Vodafonem</li>
+                <li>Dobít kredit</li>
+                <li>Vše o nákupu v eShopu</li>
+                <li>Mapa pokrytí</li>
+                <li>Naše síť</li>
+                <li>Slovník pojmů</li>
+                <li>Měření rychlosti internetu</li>
+                <li>Dostupnost internetu</li>
               </ul>
             </div>
           </div>
@@ -99,12 +104,14 @@ const Footer = () => {
             aria-labelledby="headingNine"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body">
+            <div class={`accordion-body ${classes.footerAccordionBody}`}>
               <ul>
-                <li>temporary help</li>
-                <li>permanent placement</li>
-                <li>inhouse services</li>
-                <li>HR solutions</li>
+                <li>Podpora</li>
+                <li>Kontakty</li>
+                <li>Velkoobchod</li>
+                <li>Prodejny Vodafonu</li>
+                <li>Přejít k Vodafonu</li>
+                <li>Odebírejte newsletter</li>
               </ul>
             </div>
           </div>
@@ -131,10 +138,16 @@ const Footer = () => {
             aria-labelledby="headingTen"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body">
+            <div class={`accordion-body ${classes.footerAccordionBody}`}>
               <ul>
-                <li>randstad radí</li>
-                <li>průvodce zaměstnáním</li>
+                <li> O společnosti</li>
+                <li>Proč Vodafone</li>
+                <li>Nejen pro média</li>
+                <li>Kariéra</li>
+                <li>Dokumenty ke stažení</li>
+                <li>Udržitelné podnikání</li>
+                <li>Digitální rodičovství</li>
+                <li>Nadace Vodafone</li>
               </ul>
             </div>
           </div>
@@ -161,13 +174,14 @@ const Footer = () => {
             aria-labelledby="headingEleven"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body">
+            <div class={`accordion-body ${classes.footerAccordionBody}`}>
               <ul>
-                <li>kariéra</li>
-                <li>kontakty</li>
-                <li>tiskové zprávy</li>
-                <li>historie</li>
-                <li>pomáháme</li>
+                <li>Můj Vodafone</li>
+                <li>Vodafone galerie</li>
+                <li>EET – El. evidence tržeb</li>
+                <li>VoLTE</li>
+                <li>Wi-Fi volání</li>
+                <li>Další online řešení</li>
               </ul>
             </div>
           </div>

@@ -1,6 +1,7 @@
 .myAccordion {
   --bs-accordion-bg: none;
   --bs-accordion-border-color: none;
+  padding-top: 20px;
 }
 .bottomul {
   padding-left: 10px;
@@ -8,6 +9,7 @@
 .bottomul li {
   color: #979797;
   list-style: none;
+  font-size: 13px;
 }
 .accordion-button:not(.collapsed) {
   background-color: none;
@@ -28,4 +30,9 @@
 }
 .footerIcons div img {
   height: 40px;
+}
+.footerAccordionBody ul li {
+  font-size: 12px;
+  color: white;
+  margin-top: 10px;
 }
