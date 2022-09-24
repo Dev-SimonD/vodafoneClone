@@ -97,3 +97,16 @@
 .modalBody {
   background-color: #f6f6f6;
 }
+.topIcon {
+  width: 30px;
+  height: 30px;
+  margin-inline-end: 20px;
+}
+#search {
+  width: 35px;
+  height: 35px;
+}
+#cart {
+  width: 35px;
+  height: 35px;
+}

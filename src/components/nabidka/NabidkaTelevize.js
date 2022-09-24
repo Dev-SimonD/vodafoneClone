@@ -1,65 +1,13 @@
-import React, { useEffect } from "react";
-import { NavigationMain } from "../layout/NavigationMain";
-import { Footer } from "../layout/Footer";
-import classes from "./Home.module.css";
-import HomeImg from "../asssets/homeImg.jpg";
-/* import IphoneImg from "../asssets/iphone.jpg";
-import ZvyhodneniImg from "../asssets/zvyhodneni.jpg";
-import MotorolaImg from "../asssets/motorola.png";
-import SimImg from "../asssets/sim.png"; */
-import Clanek from "../components/Clanek";
-import Nabidka from "../components/Nabidka";
-import IkonyNabidka from "../components/IkonyNabidka";
-import ProcVodafone from "../components/ProcVodafone";
-import Zajimavosti from "../components/Zajimavosti";
-
-const Home = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+import React from "react";
+import IphoneImg from "../../asssets/iphone.jpg";
+import ZvyhodneniImg from "../../asssets/zvyhodneni.jpg";
+import MotorolaImg from "../../asssets/motorola.png";
+import SimImg from "../../asssets/sim.png";
+function NabidkaTelevize() {
   return (
-    <div className={` ${classes.main}`}>
+    <div>
+      {" "}
       <div style={{ width: "90vw", margin: "auto" }}>
-        <div
-          style={{
-            maxWidth: "400px",
-            marginTop: "30px",
-            paddingBottom: "20px",
-            position: "relative",
-          }}
-        >
-          <img src={HomeImg} style={{ width: "100%", borderRadius: "20px" }} />
-
-          <div
-            className="position-absolute"
-            style={{
-              position: "absolute",
-              top: "50px",
-              left: "20px",
-            }}
-          >
-            <h2 className="text-white" style={{ fontWeight: "bold" }}>
-              Kryje vám záda doma i venku
-            </h2>
-            <p className="text-white">
-              PEVNÝ I MOBILNÍ INTERNET S NEJVĚTŠÍM POKRYTÍM
-            </p>
-            <button
-              /* style={{
-                borderColor: "white",
-                padding: "10px",
-                borderRadius: "10px",
-              }} */
-              className="basicBtn"
-            >
-              Chci usetrit
-            </button>
-          </div>
-        </div>
-      </div>
-      <IkonyNabidka></IkonyNabidka>
-      <Nabidka />
-      {/* <div style={{ width: "90vw", margin: "auto" }}>
         <div
           style={{
             maxWidth: "400px",
@@ -79,11 +27,11 @@ const Home = () => {
               position: "absolute",
               top: "20px",
               left: "20px",
-              
+              /* width: "50%", */
             }}
           >
             <h2 className="text-black" style={{ fontWeight: "bold" }}>
-              Apple iPhone 13
+              Televize...
             </h2>
             <p className="text-black">4 000 Kč výhodněji</p>
             <p
@@ -97,7 +45,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <div style={{ width: "90vw", margin: "auto" }}>
         <div
           style={{
@@ -123,6 +70,7 @@ const Home = () => {
               position: "absolute",
               top: "20px",
               left: "20px",
+              /* width: "50%", */
             }}
           >
             <div>
@@ -136,7 +84,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <div
         className="d-flex container"
         style={{
@@ -193,18 +140,9 @@ const Home = () => {
             </button>
           </div>
         </div>
-      </div> */}
-      <ProcVodafone />
-      <Zajimavosti />
-      <h1 className={classes.headerText} style={{ marginTop: "30px" }}>
-        Novinky z Vodafonu
-      </h1>
-      <Clanek />
-      <div className="centered">
-        <button className="basicBtn">Vice clanku</button>
       </div>
     </div>
   );
-};
+}
 
-export default Home;
+export default NabidkaTelevize;

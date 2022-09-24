@@ -34,6 +34,11 @@
   font-weight: bold;
   padding: 20px;
 }
+.redBox:hover {
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.12) !important;
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
 .doporuceneDouble {
   display: flex;
   justify-content: center;
