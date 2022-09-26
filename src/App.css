@@ -72,3 +72,32 @@ ul li {
   border: 1px solid #8e8e8d;
   color: #333;
 }
+.activeLink {
+  background-color: #007c92 !important;
+  color: white !important;
+}
+.moveUpBox:hover {
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.12) !important;
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+.greenText {
+  background: linear-gradient(45deg, #090, #a8b400);
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.moveUpBox {
+  transition: 250ms;
+}
+.accordion-button {
+  border-radius: 20px;
+  border-top-left-radius: none;
+  border-top-right-radius: none;
+}
+/* .accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: none !important;
+  border-top-right-radius: none !important;
+}
+ */

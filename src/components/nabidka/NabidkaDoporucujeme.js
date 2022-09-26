@@ -1,4 +1,5 @@
 import React from "react";
+import classes from "./NabidkaDoporucujeme.module.css";
 import IphoneImg from "../../asssets/iphone.jpg";
 import ZvyhodneniImg from "../../asssets/zvyhodneni.jpg";
 import MotorolaImg from "../../asssets/motorola.png";
@@ -12,10 +13,12 @@ function NabidkaDoporucujeme() {
         <div
           style={{
             maxWidth: "400px",
-            marginTop: "30px",
-            paddingBottom: "20px",
+            marginBottom: "30px",
+
             position: "relative",
+            borderRadius: "20px",
           }}
+          className="moveUpBox"
         >
           <img
             src={IphoneImg}
@@ -34,7 +37,10 @@ function NabidkaDoporucujeme() {
             <h2 className="text-black" style={{ fontWeight: "bold" }}>
               Apple iPhone 13
             </h2>
-            <p className="text-black">4 000 Kč výhodněji</p>
+            <h2>
+              {" "}
+              o <span className="greenText">4 000 Kč výhodněji</span>
+            </h2>
             <p
               className="text-black"
               style={{ width: "150px", fontSize: "14px" }}
@@ -50,10 +56,12 @@ function NabidkaDoporucujeme() {
         <div
           style={{
             maxWidth: "400px",
-            marginTop: "30px",
-            paddingBottom: "20px",
+            marginBottom: "30px",
+
             position: "relative",
+            borderRadius: "20px",
           }}
+          className="moveUpBox"
         >
           <img
             src={ZvyhodneniImg}
@@ -101,6 +109,7 @@ function NabidkaDoporucujeme() {
             backgroundColor: "white",
             minWidth: "150px",
             borderRadius: "10px",
+            minHeight: "228px",
           }}
         >
           <img
@@ -123,7 +132,9 @@ function NabidkaDoporucujeme() {
           style={{
             flexDirection: "column",
             backgroundColor: "white",
+            minWidth: "150px",
             borderRadius: "10px",
+            minHeight: "228px",
           }}
         >
           <img

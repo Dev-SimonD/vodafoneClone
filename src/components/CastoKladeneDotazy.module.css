@@ -1,0 +1,7 @@
+.item {
+  border-radius: 20px;
+  background: linear-gradient(45deg, #a90000 0, #e60000 55%, red 100%);
+}
+.accordion-button {
+  border-radius: 20px;
+}

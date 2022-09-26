@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button, Modal, ModalFooter, ModalHeader, ModalBody } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import classes from "./TestNavigation.module.css";
@@ -8,9 +8,14 @@ import Logo from "../asssets/logo.png";
 import SearchIcon from "../asssets/searchIcon.svg";
 import ProfileIcon from "../asssets/profile.png";
 import CartIcon from "../asssets/cart.png";
+import Search from "../components/Search";
 
 function TestNavigation() {
   const [modal, setModal] = React.useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // Toggle for Modal
   const toggle = () => setModal(!modal);
@@ -20,7 +25,12 @@ function TestNavigation() {
         <div className={classes.navigation}>
           <div className="ms-2">
             {/*  <img src={Logo} alt="logo" /> */}
-            <NavLink to="/">
+            <NavLink
+              to="/"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="48"
@@ -40,26 +50,32 @@ function TestNavigation() {
           </div>
           <div className="centered">
             <div className="centered" style={{ marginRight: "10px" }}>
-              <div>
-                <img
-                  className={classes.topIcon}
-                  id={classes.cart}
-                  src={CartIcon}
-                />
+              <div style={{ cursor: "pointer" }}>
+                <NavLink to="/eshop/kosik">
+                  <img
+                    className={classes.topIcon}
+                    id={classes.cart}
+                    src={CartIcon}
+                  />
+                </NavLink>
               </div>
-              <div>
-                <img
-                  className={classes.topIcon}
-                  id={classes.search}
-                  src={SearchIcon}
-                />
+              <div style={{ cursor: "pointer" }}>
+                <NavLink to="/search">
+                  <img
+                    className={classes.topIcon}
+                    id={classes.search}
+                    src={SearchIcon}
+                  />
+                </NavLink>
               </div>
-              <div>
-                <img
-                  className={classes.topIcon}
-                  id={classes.profile}
-                  src={ProfileIcon}
-                />
+              <div style={{ cursor: "pointer" }}>
+                <NavLink to="/muj/prihlaseni">
+                  <img
+                    className={classes.topIcon}
+                    id={classes.profile}
+                    src={ProfileIcon}
+                  />
+                </NavLink>
               </div>
             </div>
 
@@ -74,13 +90,13 @@ function TestNavigation() {
         </div>
         <div className={` ${classes.scrollmenu}`}>
           <NavLink to="/spojte-sluzby" style={{ position: "relative" }}>
-            Spojte služby<span className={classes.menuSticker}>Nove</span>
+            Spojte služby<span className={classes.menuSticker}>Nové</span>
           </NavLink>
           <NavLink to="/tarify">Tarify</NavLink>
           <NavLink to="/internet">Internet</NavLink>
           <NavLink to="/televize">Televize</NavLink>
           <NavLink to="/telefony">Telefony</NavLink>
-          <NavLink to="/podpora">Podpory</NavLink>
+          <NavLink to="/podpora">Podpora</NavLink>
         </div>
       </div>
       <Modal

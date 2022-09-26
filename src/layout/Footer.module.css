@@ -26,7 +26,7 @@
   padding-top: 30px;
 }
 .footerIcons {
-  flex-wrap: wrap;
+  /*  flex-wrap: wrap; */
 }
 .footerIcons div img {
   height: 40px;
@@ -35,4 +35,8 @@
   font-size: 12px;
   color: white;
   margin-top: 10px;
+}
+.socialIcon {
+  margin-inline: 5px;
+  margin-bottom: 50px;
 }

@@ -5,6 +5,7 @@ import webtop from "../asssets/webtop.png";
 import best from "../asssets/best.png";
 import leaf from "../asssets/leaf.png";
 import vodafoneGrey from "../asssets/vodafoneGreyIcon.png";
+import { SocialIcon } from "react-social-icons";
 
 const Footer = () => {
   return (
@@ -195,7 +196,12 @@ const Footer = () => {
           className="d-flex justify-content-center align-items-center flex-column"
         >
           <img src={top} alt="top" />
-          <p className={`text-center ${classes.greytext}`}>top text</p>
+          <p
+            className={`text-center ${classes.greytext}`}
+            style={{ fontSize: "10px" }}
+          >
+            top text
+          </p>
         </div>
         <div
           style={{ width: "100px" }}
@@ -203,7 +209,12 @@ const Footer = () => {
         >
           {" "}
           <img src={webtop} alt="webtop" />
-          <p className={`text-center ${classes.greytext}`}>webtop text</p>
+          <p
+            className={`text-center ${classes.greytext}`}
+            style={{ fontSize: "10px" }}
+          >
+            webtop text
+          </p>
         </div>
         <div
           style={{ width: "100px" }}
@@ -211,7 +222,12 @@ const Footer = () => {
         >
           {" "}
           <img src={best} alt="best" />
-          <p className={`text-center ${classes.greytext}`}>best</p>
+          <p
+            className={`text-center ${classes.greytext}`}
+            style={{ fontSize: "10px" }}
+          >
+            best
+          </p>
         </div>
         <div
           style={{ width: "100px" }}
@@ -220,11 +236,66 @@ const Footer = () => {
         >
           {" "}
           <img src={leaf} alt="leaf" />
-          <p className={`text-center ${classes.greytext}`}>leaf</p>
+          <p
+            className={`text-center ${classes.greytext}`}
+            style={{ fontSize: "10px" }}
+          >
+            leaf
+          </p>
         </div>
       </div>
       <h1 className={classes.spojte}>Spojte se s Vodafonem</h1>
-      <div>Icons</div>
+      <div className="centered">
+        <SocialIcon
+          url="#"
+          network="facebook"
+          bgColor="white"
+          fgColor="black"
+          style={{ height: 33, width: 33 }}
+          className={classes.socialIcon}
+        />
+        <SocialIcon
+          url="#"
+          network="twitter"
+          bgColor="white"
+          fgColor="black"
+          style={{ height: 33, width: 33 }}
+          className={classes.socialIcon}
+        />
+        <SocialIcon
+          url="#"
+          network="instagram"
+          bgColor="white"
+          fgColor="black"
+          style={{ height: 33, width: 33 }}
+          className={classes.socialIcon}
+        />
+        <SocialIcon
+          url="#"
+          network="youtube"
+          bgColor="white"
+          style={{ height: 33, width: 33 }}
+          fgColor="black"
+          className={classes.socialIcon}
+        />
+        <SocialIcon
+          url="#"
+          network="email"
+          bgColor="white"
+          fgColor="black"
+          style={{ height: 33, width: 33 }}
+          className={classes.socialIcon}
+        />
+        <SocialIcon
+          url="#"
+          network="linkedin"
+          bgColor="white"
+          fgColor="black"
+          style={{ height: 33, width: 33 }}
+          className={classes.socialIcon}
+        />
+      </div>
+
       <hr style={{ color: "white", margin: "0" }}></hr>
       <div style={{ backgroundColor: "#252525" }}>
         {/* <span>

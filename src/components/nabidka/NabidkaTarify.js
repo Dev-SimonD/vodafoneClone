@@ -1,7 +1,7 @@
 import React from "react";
-import IphoneImg from "../../asssets/iphone.jpg";
-import ZvyhodneniImg from "../../asssets/zvyhodneni.jpg";
-import MotorolaImg from "../../asssets/motorola.png";
+import NabidkaTarifyImg from "../../asssets/nabidkaTarifyImg.jpg";
+import NabidkaTarifyImg2 from "../../asssets/nabidkaTarifyImg2.jpg";
+import NabidkaTarifySmall1 from "../../asssets/tarifyNabidkasmall1.png";
 import SimImg from "../../asssets/sim.png";
 
 function NabidkaTarify() {
@@ -12,13 +12,15 @@ function NabidkaTarify() {
         <div
           style={{
             maxWidth: "400px",
-            marginTop: "30px",
-            paddingBottom: "20px",
+            marginBottom: "30px",
+
             position: "relative",
+            borderRadius: "20px",
           }}
+          className="moveUpBox"
         >
           <img
-            src={IphoneImg}
+            src={NabidkaTarifyImg}
             style={{ width: "100%", borderRadius: "20px" }}
           />
 
@@ -54,9 +56,10 @@ function NabidkaTarify() {
             paddingBottom: "20px",
             position: "relative",
           }}
+          className="moveUpBox"
         >
           <img
-            src={ZvyhodneniImg}
+            src={NabidkaTarifyImg2}
             style={{
               borderRadius: "20px",
               height: "240px",
@@ -104,7 +107,7 @@ function NabidkaTarify() {
           }}
         >
           <img
-            src={MotorolaImg}
+            src={NabidkaTarifySmall1}
             alt="telefon"
             style={{ maxHeight: "150px", maxWidth: "100%" }}
           />

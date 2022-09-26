@@ -1,0 +1,9 @@
+.main:hover {
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.12) !important;
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+.main {
+  transition: 250ms;
+}

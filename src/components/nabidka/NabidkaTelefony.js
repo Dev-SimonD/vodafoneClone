@@ -11,10 +11,12 @@ function NabidkaTelefony() {
         <div
           style={{
             maxWidth: "400px",
-            marginTop: "30px",
-            paddingBottom: "20px",
+            marginBottom: "30px",
+
             position: "relative",
+            borderRadius: "20px",
           }}
+          className="moveUpBox"
         >
           <img
             src={IphoneImg}
@@ -53,6 +55,7 @@ function NabidkaTelefony() {
             paddingBottom: "20px",
             position: "relative",
           }}
+          className="moveUpBox"
         >
           <img
             src={ZvyhodneniImg}

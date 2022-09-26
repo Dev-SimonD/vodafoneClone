@@ -41,7 +41,10 @@ const Home = () => {
             <h2 className="text-white" style={{ fontWeight: "bold" }}>
               Kryje vám záda doma i venku
             </h2>
-            <p className="text-white">
+            <p
+              className="text-white"
+              style={{ width: "80%", paddingBottom: "20px" }}
+            >
               PEVNÝ I MOBILNÍ INTERNET S NEJVĚTŠÍM POKRYTÍM
             </p>
             <button
@@ -52,7 +55,7 @@ const Home = () => {
               }} */
               className="basicBtn"
             >
-              Chci usetrit
+              Chci ušetřit
             </button>
           </div>
         </div>

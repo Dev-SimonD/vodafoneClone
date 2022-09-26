@@ -11,24 +11,66 @@ import NabidkaVodafone from "./nabidka/NabidkaVodafone";
 
 function Nabidka() {
   const [nabidka, setNabidka] = useState("doporucujeme");
+  const [doporucujemeActive, setDoporucujemeActive] = useState(true);
+  const [tarifyActive, setTarifyActive] = useState(false);
+  const [internetActive, setInternetActive] = useState(false);
+  const [televizeActive, setTelevizeActive] = useState(false);
+  const [telefonyActive, setTelefonyActive] = useState(false);
+  const [vodafoneActive, setVodafoneActive] = useState(false);
 
   const doporucujemeHandler = () => {
     setNabidka("doporucujeme");
+    setDoporucujemeActive(true);
+    setTarifyActive(false);
+    setInternetActive(false);
+    setTelevizeActive(false);
+    setTelefonyActive(false);
+    setVodafoneActive(false);
   };
   const tarifyHandler = () => {
     setNabidka("tarify");
+    setDoporucujemeActive(false);
+    setTarifyActive(true);
+    setInternetActive(false);
+    setTelevizeActive(false);
+    setTelefonyActive(false);
+    setVodafoneActive(false);
   };
   const internetHandler = () => {
     setNabidka("internet");
+    setDoporucujemeActive(false);
+    setTarifyActive(false);
+    setInternetActive(true);
+    setTelevizeActive(false);
+    setTelefonyActive(false);
+    setVodafoneActive(false);
   };
   const televizeHandler = () => {
     setNabidka("televize");
+    setDoporucujemeActive(false);
+    setTarifyActive(false);
+    setInternetActive(false);
+    setTelevizeActive(true);
+    setTelefonyActive(false);
+    setVodafoneActive(false);
   };
   const telefonyHandler = () => {
     setNabidka("telefony");
+    setDoporucujemeActive(false);
+    setTarifyActive(false);
+    setInternetActive(false);
+    setTelevizeActive(false);
+    setTelefonyActive(true);
+    setVodafoneActive(false);
   };
   const vodafoneHandler = () => {
     setNabidka("vodafone");
+    setDoporucujemeActive(false);
+    setTarifyActive(false);
+    setInternetActive(false);
+    setTelevizeActive(false);
+    setTelefonyActive(false);
+    setVodafoneActive(true);
   };
 
   return (
@@ -43,18 +85,43 @@ function Nabidka() {
         <NavLink to="#">Televize</NavLink>
         <NavLink to="#">Telefony</NavLink>
         <NavLink to="#">Vodafone TV</NavLink> */}
-        <ul style={{ padding: "0" }}>
+        <ul style={{ padding: "0" }} className={classes.ul}>
           <li
+            className={doporucujemeActive ? "activeLink" : ""}
             onClick={doporucujemeHandler}
-            style={{ backgroundColor: "#007c92", color: "white" }}
           >
             Doporučujeme
           </li>
-          <li onClick={tarifyHandler}>Tarify</li>
-          <li onClick={internetHandler}>Internet</li>
-          <li onClick={televizeHandler}>Televize</li>
-          <li onClick={telefonyHandler}>Telefony</li>
-          <li onClick={vodafoneHandler}>Vodafone</li>
+          <li
+            className={tarifyActive ? "activeLink" : ""}
+            onClick={tarifyHandler}
+          >
+            Tarify
+          </li>
+          <li
+            className={internetActive ? "activeLink" : ""}
+            onClick={internetHandler}
+          >
+            Internet
+          </li>
+          <li
+            className={televizeActive ? "activeLink" : ""}
+            onClick={televizeHandler}
+          >
+            Televize
+          </li>
+          <li
+            className={telefonyActive ? "activeLink" : ""}
+            onClick={telefonyHandler}
+          >
+            Telefony
+          </li>
+          <li
+            className={vodafoneActive ? "activeLink" : ""}
+            onClick={vodafoneHandler}
+          >
+            Vodafone
+          </li>
         </ul>
       </div>
       {nabidka == "doporucujeme" ? (
