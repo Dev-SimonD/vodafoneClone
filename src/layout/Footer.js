@@ -1,10 +1,10 @@
 import React from "react";
 import classes from "./Footer.module.css";
-import top from "../asssets/top.png";
-import webtop from "../asssets/webtop.png";
-import best from "../asssets/best.png";
-import leaf from "../asssets/leaf.png";
-import vodafoneGrey from "../asssets/vodafoneGreyIcon.png";
+import top from "../asssets/footer/top.png";
+import webtop from "../asssets/footer/webtop.png";
+import best from "../asssets/footer/best.png";
+import leaf from "../asssets/footer/leaf.png";
+import vodafoneGrey from "../asssets/footer/vodafoneGreyIcon.png";
 import { SocialIcon } from "react-social-icons";
 
 const Footer = () => {

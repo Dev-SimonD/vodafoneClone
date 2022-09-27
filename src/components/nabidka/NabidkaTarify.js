@@ -1,8 +1,8 @@
 import React from "react";
-import NabidkaTarifyImg from "../../asssets/nabidkaTarifyImg.jpg";
-import NabidkaTarifyImg2 from "../../asssets/nabidkaTarifyImg2.jpg";
-import NabidkaTarifySmall1 from "../../asssets/tarifyNabidkasmall1.png";
-import SimImg from "../../asssets/sim.png";
+import NabidkaTarifyImg from "../../asssets/nabidkaTarify/nabidkaTarifyImg.jpg";
+import NabidkaTarifyImg2 from "../../asssets/nabidkaTarify/nabidkaTarifyImg2.jpg";
+import NabidkaTarifySmall1 from "../../asssets/nabidkaTarify/tarifyNabidkasmall1.png";
+import SimImg from "../../asssets/nabidkaTarify/sim.png";
 
 function NabidkaTarify() {
   return (

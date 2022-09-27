@@ -1,9 +1,9 @@
 import React from "react";
 import classes from "./ProcVodafone.module.css";
-import FiveGImg from "../asssets/fiveg.png";
-import MobileImg from "../asssets/mobile.png";
-import ChranimeImg from "../asssets/chranime.png";
-import SpolecneImg from "../asssets/spolecne.png";
+import FiveGImg from "../asssets/procVodafone/fiveg.png";
+import MobileImg from "../asssets/procVodafone/mobile.png";
+import ChranimeImg from "../asssets/procVodafone/chranime.png";
+import SpolecneImg from "../asssets/procVodafone/spolecne.png";
 
 function ProcVodafone() {
   return (

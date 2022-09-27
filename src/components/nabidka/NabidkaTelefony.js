@@ -1,8 +1,9 @@
 import React from "react";
-import IphoneImg from "../../asssets/iphone.jpg";
-import ZvyhodneniImg from "../../asssets/zvyhodneni.jpg";
-import MotorolaImg from "../../asssets/motorola.png";
-import SimImg from "../../asssets/sim.png";
+import IphoneImg from "../../asssets/nabidkaDoporucujeme/iphone.jpg";
+import ZvyhodneniImg from "../../asssets/nabidkaDoporucujeme/zvyhodneni.jpg";
+import MotorolaImg from "../../asssets/nabidkaDoporucujeme/motorola.png";
+import SimImg from "../../asssets/nabidkaDoporucujeme/sim.png";
+
 function NabidkaTelefony() {
   return (
     <div>

@@ -1,14 +1,15 @@
 import React, { useEffect } from "react";
 import classes from "./SpojteSluzby.module.css";
-import SpojteTarifyImg from "../asssets/spojteTarifyImg.jpg";
-import SpojteTarifyImg2 from "../asssets/spojteTarifyJakToFunguje.png";
+import SpojteTarifyImg from "../asssets/spojteSluzby/spojteTarifyImg.jpg";
+import SpojteTarifyImg2 from "../asssets/spojteSluzby/spojteTarifyJakToFunguje.png";
+import SpojteSluzbyWoman from "../asssets/spojteSluzby/spojteSluzbyWoman.png";
 import CastoKladeneDotazy from "../components/CastoKladeneDotazy";
 function SpojteSluzby() {
-  useEffect(() => {
+  /*  useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, []); */
   return (
-    <div className="container">
+    <div className={`container ${classes.main}`}>
       <div style={{ width: "90vw", margin: "auto" }} className="pt-4">
         <div
           style={{
@@ -64,11 +65,35 @@ function SpojteSluzby() {
         Prohlédněte si příklady, jak{" "}
         <span className="greenText">můžete ušetřit</span>
       </h1>
+
+      <div className="container">
+        <div className={classes.box}>
+          <img src={SpojteSluzbyWoman} />
+          <h1 className="mt-4" style={{ fontWeight: "bold" }}>
+            <span style={{ color: "red", fontWeight: "bold" }}>
+              Pomůžeme vám ušetřit!
+            </span>{" "}
+            Sestavíme kombinaci přesně pro vás
+          </h1>
+          <p>Nechte nám na sebe číslo. Zavoláme vám a se vším poradíme.</p>
+          <input placeholder="Zadejte svuj telefon" />
+          <button className="btn btn-danger">Zavolejte mi</button>
+          <p>
+            Kliknutím na „Zavolejte mi“ souhlasíte s tím, že budete kontaktováni
+            s obchodní nabídkou.{" "}
+            <span style={{ textDecoration: "underline" }}>
+              {" "}
+              Více o ochraně soukromí.{" "}
+            </span>
+          </p>
+        </div>
+      </div>
       <h1 className={classes.headerText} style={{ marginTop: "30px" }}>
         Často kladené dotazy
       </h1>
       <div>
-        <CastoKladeneDotazy />
+        {/*         <CastoKladeneDotazy />
+         */}{" "}
       </div>
     </div>
   );

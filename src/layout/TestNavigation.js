@@ -4,10 +4,10 @@ import { NavLink } from "react-router-dom";
 import classes from "./TestNavigation.module.css";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import Hamburger from "hamburger-react";
-import Logo from "../asssets/logo.png";
-import SearchIcon from "../asssets/searchIcon.svg";
-import ProfileIcon from "../asssets/profile.png";
-import CartIcon from "../asssets/cart.png";
+/* import Logo from "../asssets/logo.png"; */
+import SearchIcon from "../asssets/menu/searchIcon.svg";
+import ProfileIcon from "../asssets/menu/profile.png";
+import CartIcon from "../asssets/menu/cart.png";
 import Search from "../components/Search";
 
 function TestNavigation() {
