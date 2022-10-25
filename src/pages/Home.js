@@ -19,6 +19,9 @@ const Home = () => {
   }, []);
   return (
     <div className={` ${classes.main}`}>
+      <div className={classes.imageBox}>
+        <div className={classes.image}></div>
+      </div>
       <div style={{ width: "90vw", margin: "auto" }}>
         <div
           style={{
@@ -47,16 +50,7 @@ const Home = () => {
             >
               PEVNÝ I MOBILNÍ INTERNET S NEJVĚTŠÍM POKRYTÍM
             </p>
-            <button
-              /* style={{
-                borderColor: "white",
-                padding: "10px",
-                borderRadius: "10px",
-              }} */
-              className="basicBtn"
-            >
-              Chci ušetřit
-            </button>
+            <button className="basicBtn">Chci ušetřit</button>
           </div>
         </div>
       </div>
@@ -70,7 +64,7 @@ const Home = () => {
       </h1>
       <Clanek />
       <div className="centered">
-        <button className="basicBtn">Vice clanku</button>
+        <button className="basicBtn">Více článků</button>
       </div>
     </div>
   );
