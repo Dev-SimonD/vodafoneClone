@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import classes from "./Telefony.module.css";
 
 function Telefony() {
-  return <div>Telefony</div>;
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  return <div className={classes.main}>Telefony</div>;
 }
 
 export default Telefony;

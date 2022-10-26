@@ -7,88 +7,94 @@ import SimImg from "../../asssets/nabidkaDoporucujeme/sim.png";
 
 function NabidkaDoporucujeme() {
   return (
-    <div>
+    <div className="container">
       {" "}
-      <div style={{ width: "90vw", margin: "auto" }}>
-        <div
-          style={{
-            maxWidth: "400px",
-            marginBottom: "30px",
-
-            position: "relative",
-            borderRadius: "20px",
-          }}
-          className="moveUpBox"
-        >
-          <img
-            src={IphoneImg}
-            style={{ width: "100%", borderRadius: "20px" }}
-          />
-
+      <div className={`discover-block ${classes.myblock}`}>
+        <div style={{ margin: "auto" }}>
           <div
-            className="position-absolute"
             style={{
-              position: "absolute",
-              top: "20px",
-              left: "20px",
-              /* width: "50%", */
+              maxWidth: "400px",
+              marginBottom: "30px",
+
+              position: "relative",
+              borderRadius: "20px",
             }}
+            className="moveUpBox"
           >
-            <h2 className="text-black" style={{ fontWeight: "bold" }}>
-              Apple iPhone 13
-            </h2>
-            <h2>
-              {" "}
-              o <span className="greenText">4 000 Kč výhodněji</span>
-            </h2>
-            <p
-              className="text-black"
-              style={{ width: "150px", fontSize: "14px" }}
+            <img
+              src={IphoneImg}
+              style={{
+                borderRadius: "20px",
+                /* height: "240px", */
+                width: "80vw",
+                objectFit: "cover",
+              }}
+            />
+            <div
+              className="position-absolute"
+              style={{
+                position: "absolute",
+                top: "20px",
+                left: "20px",
+                /* width: "50%", */
+              }}
             >
-              Pořiďte si iPhone 13 s neomezeným tarifem výhodněji. Nyní k němu
-              získáte i Apple AirPods jen za 1 777 Kč.
-            </p>
-            <button className="btn btn-danger">Chci usetrit</button>
+              <h2 className="text-black" style={{ fontWeight: "bold" }}>
+                Apple iPhone 13
+              </h2>
+              <h2>
+                {" "}
+                o <span className="greenText">4 000 Kč výhodněji</span>
+              </h2>
+              <p
+                className="text-black"
+                style={{ width: "150px", fontSize: "14px" }}
+              >
+                Pořiďte si iPhone 13 s neomezeným tarifem výhodněji. Nyní k němu
+                získáte i Apple AirPods jen za 1 777 Kč.
+              </p>
+              <button className="btn btn-danger">Chci usetrit</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div style={{ width: "90vw", margin: "auto" }}>
-        <div
-          style={{
-            maxWidth: "400px",
-            marginBottom: "30px",
-
-            position: "relative",
-            borderRadius: "20px",
-          }}
-          className="moveUpBox"
-        >
-          <img
-            src={ZvyhodneniImg}
-            style={{
-              borderRadius: "20px",
-              height: "240px",
-              width: "90vw",
-              objectFit: "cover",
-            }}
-          />
-
+        <div style={{ margin: "auto" }}>
           <div
-            className="position-absolute"
             style={{
-              position: "absolute",
-              top: "20px",
-              left: "20px",
-              /* width: "50%", */
+              maxWidth: "400px",
+              marginBottom: "30px",
+
+              position: "relative",
+              borderRadius: "20px",
             }}
+            className="moveUpBox"
           >
-            <div>
-              <h2 className="text-white" style={{ width: "50%" }}>
-                Internet na doma i do mobilu
-              </h2>
-              <p className="text-white" style={{ width: "60%" }}>
-                Za zvýhodněnou cenu díky spojení služeb
-              </p>
+            <img
+              src={ZvyhodneniImg}
+              style={{
+                borderRadius: "20px",
+                /* height: "240px", */
+                width: "80vw",
+                objectFit: "cover",
+              }}
+            />
+
+            <div
+              className="position-absolute"
+              style={{
+                position: "absolute",
+                top: "20px",
+                left: "20px",
+                /* width: "50%", */
+              }}
+            >
+              <div>
+                <h2 className="text-white" style={{ width: "50%" }}>
+                  Internet na doma i do mobilu
+                </h2>
+                <p className="text-white" style={{ width: "60%" }}>
+                  Za zvýhodněnou cenu díky spojení služeb
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -24,7 +24,6 @@ function TestNavigation() {
       <div>
         <div className={classes.navigation}>
           <div className="ms-2">
-            {/*  <img src={Logo} alt="logo" /> */}
             <NavLink
               to="/"
               onClick={() => {
@@ -48,7 +47,7 @@ function TestNavigation() {
               </svg>
             </NavLink>
           </div>
-          <div className="centered">
+          <div className={`centered ${classes.mobileMenu}`}>
             <div className="centered" style={{ marginRight: "10px" }}>
               <div style={{ cursor: "pointer" }}>
                 <NavLink to="/eshop/kosik">
@@ -87,7 +86,50 @@ function TestNavigation() {
               </div>
             </Button>
           </div>
+
+          {/* the showed menu above 756px */}
+
+          <div className={classes.flexMenu}>
+            <div className={` ${classes.scrollmenuTop}`}>
+              <NavLink to="/spojte-sluzby">Spojte služby</NavLink>
+              <NavLink to="/tarify">Tarify</NavLink>
+              <NavLink to="/internet">Internet</NavLink>
+              <NavLink to="/televize">Televize</NavLink>
+              <NavLink to="/telefony">Telefony</NavLink>
+              <NavLink to="/podpora">Podpora</NavLink>
+            </div>
+            <div
+              className={`centered ${classes.secondMenu}`}
+              style={{ marginRight: "10px" }}
+            >
+              <div style={{ cursor: "pointer" }}>
+                <NavLink to="/eshop/kosik">
+                  <img
+                    className={classes.topIcon}
+                    id={classes.cart}
+                    src={CartIcon}
+                  />
+                </NavLink>
+              </div>
+              <div style={{ cursor: "pointer" }}>
+                <NavLink to="/search">
+                  <img
+                    className={classes.topIcon}
+                    id={classes.search}
+                    src={SearchIcon}
+                  />
+                </NavLink>
+              </div>
+              <button className={`btn basicBtn ${classes.prejitBtn}`}>
+                Přejít k nám
+              </button>
+              <button className={`btn btn-danger ${classes.prihlaseniBtn}`}>
+                Přihlášení
+              </button>
+            </div>
+          </div>
         </div>
+
         <div className={` ${classes.scrollmenu}`}>
           <NavLink to="/spojte-sluzby" style={{ position: "relative" }}>
             Spojte služby<span className={classes.menuSticker}>Nové</span>

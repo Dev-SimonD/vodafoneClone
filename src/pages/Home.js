@@ -3,10 +3,6 @@ import { NavigationMain } from "../layout/NavigationMain";
 import { Footer } from "../layout/Footer";
 import classes from "./Home.module.css";
 import HomeImg from "../asssets//home/homeImg.jpg";
-/* import IphoneImg from "../asssets/iphone.jpg";
-import ZvyhodneniImg from "../asssets/zvyhodneni.jpg";
-import MotorolaImg from "../asssets/motorola.png";
-import SimImg from "../asssets/sim.png"; */
 import Clanek from "../components/Clanek";
 import Nabidka from "../components/Nabidka";
 import IkonyNabidka from "../components/IkonyNabidka";
@@ -19,19 +15,19 @@ const Home = () => {
   }, []);
   return (
     <div className={` ${classes.main}`}>
-      <div className={classes.imageBox}>
-        <div className={classes.image}></div>
-      </div>
+      {/* <div className={classes.imageBox}>
+         <div className={classes.image}></div>
+      </div> */}
       <div style={{ width: "90vw", margin: "auto" }}>
         <div
           style={{
-            maxWidth: "400px",
-            marginTop: "30px",
+            maxWidth: "1260px",
+            /* marginTop: "30px", */
             paddingBottom: "20px",
             position: "relative",
           }}
         >
-          <img src={HomeImg} style={{ width: "100%", borderRadius: "20px" }} />
+          <img src={HomeImg} style={{ width: "80vw", borderRadius: "20px" }} />
 
           <div
             className="position-absolute"
@@ -64,7 +60,9 @@ const Home = () => {
       </h1>
       <Clanek />
       <div className="centered">
-        <button className="basicBtn">Více článků</button>
+        <button className={`btn basicBtn ${classes.prejitBtn}`}>
+          Více článků
+        </button>
       </div>
     </div>
   );

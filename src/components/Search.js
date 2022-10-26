@@ -5,7 +5,7 @@ function Search() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div style={{ height: "60vh" }}>
+    <div style={{ height: "60vh" }} className={classes.main}>
       <input
         autoFocus
         className={classes.myInput}

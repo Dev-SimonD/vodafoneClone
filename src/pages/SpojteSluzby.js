@@ -5,9 +5,9 @@ import SpojteTarifyImg2 from "../asssets/spojteSluzby/spojteTarifyJakToFunguje.p
 import SpojteSluzbyWoman from "../asssets/spojteSluzby/spojteSluzbyWoman.png";
 import CastoKladeneDotazy from "../components/CastoKladeneDotazy";
 function SpojteSluzby() {
-  /*  useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
-  }, []); */
+  }, []);
   return (
     <div className={`container ${classes.main}`}>
       <div style={{ width: "90vw", margin: "auto" }} className="pt-4">

@@ -7,3 +7,15 @@
 .main {
   transition: 250ms;
 }
+.myblock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 568px) {
+}
+@media screen and (min-width: 768px) {
+  img {
+    max-width: 500px;
+  }
+}

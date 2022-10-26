@@ -52,3 +52,8 @@
   overflow-x: hidden;
   background-color: #f4f4f4;
 }
+@media screen and (min-width: 1024px) {
+  .main {
+    padding-top: 100px;
+  }
+}

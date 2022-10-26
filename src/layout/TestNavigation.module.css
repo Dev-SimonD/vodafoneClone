@@ -54,6 +54,9 @@
   padding-top: 76px;
   background-color: white;
   border-bottom: 1px solid #d6d6d6;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .scrollmenu a {
@@ -103,10 +106,81 @@
   margin-inline-end: 20px;
 }
 #search {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
 }
 #cart {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
+}
+#profile {
+  width: 23px;
+  height: 23px;
+}
+.flexMenu {
+  display: none;
+}
+.scrollmenuTop {
+  /* background-color: #333; */
+  overflow: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  background-color: white;
+}
+
+.scrollmenuTop a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  font-weight: lighter;
+  padding: 14px;
+  text-decoration: none;
+  font-weight: normal;
+  transition: 0.2s;
+}
+.scrollmenuTop a:hover {
+  color: #e60000;
+}
+.secondMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+}
+.prejitBtn {
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  height: 47px;
+}
+.prejitBtn:hover {
+  background-color: #f8f8f8;
+  border-color: #434241;
+  color: #333;
+}
+.prihlaseniBtn {
+  border-radius: 5px;
+  height: 47px;
+}
+@media screen and (min-width: 560px) {
+  .scrollmenu {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .flexMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navigation {
+    justify-content: flex-start;
+  }
+  .mobileMenu {
+    display: none;
+  }
+  .scrollmenu {
+    display: none;
+  }
 }

@@ -1,5 +1,6 @@
 .main {
   background-color: #f4f4f4;
+  padding-top: 30px;
 }
 .scrollmenu {
   /* background-color: #333; */
@@ -48,13 +49,34 @@
   background-color: white;
   width: 200px;
 }
-.imageBox{
+.imageBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 90vw;
-  margin: auto;
+  /* margin: auto; */
 }
-.image{
-  
+.image {
   background-image: url("https://www.vodafone.cz/public/galleries/33/32189/hpcbu2208_mobil_1536x2072-3.jpg?0aea0b6dcd82519ce8d073c4cac93b2e");
-  background-position: 50% 0;
-    background-color: #fff;
+  background-position: bottom center;
+  background-color: #fff;
+}
+.prejitBtn {
+  border-radius: 5px;
+
+  margin-bottom: 0px;
+  height: 47px;
+  margin-bottom: 30px;
+}
+.prejitBtn:hover {
+  background-color: #f8f8f8;
+  border-color: #434241;
+  color: #333;
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1023px) {
+  .main {
+    padding-top: 100px;
+  }
 }
