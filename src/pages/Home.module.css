@@ -73,7 +73,41 @@
   border-color: #434241;
   color: #333;
 }
+.secondImg {
+  background-image: url("https://www.vodafone.cz/public/galleries/33/32195/hpcbu2208_tablet_2048x840-3.jpg");
+  margin: 15px 20px;
+  padding-bottom: 0;
+  font-size: 22px;
+  background-size: cover;
+  border-radius: 10px;
+}
+.innerImg {
+  padding: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .secondImg {
+    background-position: bottom center;
+    min-height: 50vh;
+  }
+}
 @media screen and (min-width: 768px) {
+  .secondImg {
+    min-height: 420px;
+    background-color: #eee;
+    background-position: 50% bottom;
+  }
+
+  .innerImg h2 {
+    font-size: 57px;
+    line-height: 62px;
+    width: 60%;
+    margin-top: 30px;
+  }
+  .innerImg p {
+    font-size: 24px;
+    width: 60%;
+  }
 }
 @media screen and (min-width: 1023px) {
   .main {
