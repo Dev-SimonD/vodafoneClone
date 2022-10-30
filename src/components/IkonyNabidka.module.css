@@ -5,7 +5,7 @@
   scrollbar-width: none;
   background-color: white;
   border-bottom: 1px solid #d6d6d6;
-  width: 90%;
+  width: 95vw;
   margin: auto;
   height: auto;
   border-radius: 20px;
@@ -22,4 +22,13 @@
 }
 svg {
   height: 40px;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  svg {
+    height: 100px;
+  }
+  .scrollmenu a {
+    padding: 10px 45px;
+  }
 }

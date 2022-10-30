@@ -163,6 +163,10 @@
   border-radius: 5px;
   height: 47px;
 }
+.menuPrejitBtn {
+  font-family: "SFMono-Regular,Menlo,Monaco,Consolas," Liberation Mono ","
+    Courier New ",monospace";
+}
 @media screen and (min-width: 560px) {
   .scrollmenu {
     justify-content: center;

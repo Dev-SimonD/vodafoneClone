@@ -46,7 +46,7 @@ function Nabidka() {
     setVodafoneActive(false);
   };
   const televizeHandler = () => {
-    setNabidka("televize");
+    setNabidka("Vodafone TV");
     setDoporucujemeActive(false);
     setTarifyActive(false);
     setInternetActive(false);
@@ -108,9 +108,9 @@ function Nabidka() {
             className={televizeActive ? "activeLink" : ""}
             onClick={televizeHandler}
           >
-            Televize
+            Vodafone TV
           </li>
-          <li
+          {/* <li
             className={telefonyActive ? "activeLink" : ""}
             onClick={telefonyHandler}
           >
@@ -121,7 +121,7 @@ function Nabidka() {
             onClick={vodafoneHandler}
           >
             Vodafone
-          </li>
+          </li> */}
         </ul>
       </div>
       {nabidka == "doporucujeme" ? (
@@ -130,13 +130,30 @@ function Nabidka() {
         <NabidkaTarify />
       ) : nabidka == "internet" ? (
         <NabidkaInternet />
-      ) : nabidka == "televize" ? (
-        <NabidkaTelevize />
-      ) : nabidka == "telefony" ? (
+      ) : nabidka == "Vodafone TV" ? (
+        (<NabidkaTelevize /> /*  : nabidka == "telefony" ? (
         <NabidkaTelefony />
       ) : nabidka == "vodafone" ? (
         <NabidkaVodafone />
-      ) : null}
+      )  */ /*: nabidka == "telefony" ? (
+        <NabidkaTelefony />
+      ) : nabidka == "vodafone" ? (
+        <NabidkaVodafone />
+      )  */ /*: nabidka == "telefony" ? (
+        <NabidkaTelefony />
+      ) : nabidka == "vodafone" ? (
+        <NabidkaVodafone />
+      )  */ /*: nabidka == "telefony" ? (
+        <NabidkaTelefony />
+      ) : nabidka == "vodafone" ? (
+        <NabidkaVodafone />
+      )  */)
+      ) : /*: nabidka == "telefony" ? (
+        <NabidkaTelefony />
+      ) : nabidka == "vodafone" ? (
+        <NabidkaVodafone />
+      )  */
+      null}
     </div>
   );
 }

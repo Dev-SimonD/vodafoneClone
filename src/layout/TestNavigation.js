@@ -211,12 +211,16 @@ function TestNavigation() {
           <div style={{ display: "flex", flexDirection: "column" }}>
             <button
               className="btn btn-danger"
-              style={{ width: "200px", marginBottom: "30px" }}
+              style={{ width: "200px", marginBottom: "30px", height: "47px" }}
             >
-              {`Muj Vodafone >`}
+              Můj Vodafone &nbsp; &nbsp;{">"}
             </button>
-            <button className="basicBtn" style={{ width: "200px" }}>
-              {`Prejit k nam >`}
+            <button
+              /* className={`basicBtn ${classes.menuPrejitBtn}`} */
+              className="btn btn-light"
+              style={{ width: "200px", height: "47px", borderColor: "#bbb" }}
+            >
+              Přejít k nám &nbsp; &nbsp;{">"}
             </button>
           </div>
         </ModalBody>

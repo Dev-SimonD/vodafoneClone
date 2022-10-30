@@ -15,7 +15,7 @@ const Home = () => {
   }, []);
   return (
     <div className={` ${classes.main}`}>
-      <div style={{ width: "90vw", margin: "auto" }}>
+      <div style={{ width: "100vw", margin: "auto" }}>
         <div>
           <div className={classes.secondImg}>
             <div className={classes.innerImg}>
@@ -28,7 +28,9 @@ const Home = () => {
               >
                 PEVNÝ I MOBILNÍ INTERNET S NEJVĚTŠÍM POKRYTÍM
               </p>
-              <button className="basicBtn">Chci ušetřit</button>
+              <button className="btn btn-light" style={{ borderColor: "#bbb" }}>
+                Chci ušetřit
+              </button>
             </div>
           </div>
         </div>
