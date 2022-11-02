@@ -42,7 +42,12 @@ function ProcVodafone() {
         </div>
       </div>
       <div className="centered">
-        <button className="basicBtn mt-4">Více důvodů, proč být s námi</button>
+        <button
+          className="btn btn-light my-4"
+          style={{ borderColor: "#222", backgroundColor: "white" }}
+        >
+          Více důvodů, proč být s námi
+        </button>
       </div>
     </div>
   );

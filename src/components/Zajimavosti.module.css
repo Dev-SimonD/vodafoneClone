@@ -19,6 +19,13 @@
   padding-bottom: 15px;
   border-bottom: 1px solid rgb(235, 235, 235);
 }
+.item:hover {
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.12) !important;
+  -webkit-transform: translateY(-0px);
+  transform: translateY(-0px);
+  transition: 0.2s;
+  cursor: pointer;
+}
 .item:nth-child(4) {
   border-bottom: none;
 }
@@ -29,4 +36,55 @@
 p {
   margin: 0;
   font-weight: lighter;
+}
+.storeBox,
+.signalBox,
+.roamingBox,
+.carerBox {
+  background-color: white;
+
+  min-width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 234px;
+  border-radius: 10px;
+  width: 20vw;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+.headerText2 {
+  display: none;
+  text-align: center;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  padding-block: 40px;
+}
+.storeBox:hover,
+.signalBox:hover,
+.roamingBox:hover,
+.carerBox:hover {
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.12) !important;
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+  transition: 0.4s;
+  cursor: pointer;
+}
+@media screen and (min-width: 766px) {
+  .mainZajimavosti {
+    display: none;
+  }
+  .headerText2 {
+    display: block;
+  }
+}
+@media screen and (max-width: 765px) {
+  .storeBox,
+  .signalBox,
+  .roamingBox,
+  .carerBox {
+    display: none;
+  }
 }

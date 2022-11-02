@@ -1,0 +1,28 @@
+.mainBox {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+/* .row {
+  --bs-gutter-x: 0rem !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  margin-top: 0px !important;
+} */
+.clanekImage {
+  border-radius: 10px 10px 0 0;
+}
+
+@media screen and (min-width: 560px) {
+  .mainBox {
+    grid-template-columns: 1fr 1fr;
+  }
+  .clanekImage {
+    height: 180px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mainBox {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

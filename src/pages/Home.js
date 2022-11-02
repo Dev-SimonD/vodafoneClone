@@ -40,12 +40,18 @@ const Home = () => {
 
       <ProcVodafone />
       <Zajimavosti />
-      <h1 className={classes.headerText} style={{ marginTop: "30px" }}>
+      <h1
+        className={classes.headerText}
+        style={{ paddingBlock: "40px", marginTop: "40px" }}
+      >
         Novinky z Vodafonu
       </h1>
       <Clanek />
       <div className="centered">
-        <button className={`btn basicBtn ${classes.prejitBtn}`}>
+        <button
+          className="btn btn-light my-4"
+          style={{ borderColor: "#222", backgroundColor: "white" }}
+        >
           Více článků
         </button>
       </div>

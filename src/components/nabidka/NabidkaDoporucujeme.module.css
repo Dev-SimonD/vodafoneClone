@@ -38,33 +38,58 @@
   background-image: url("https://www.vodafone.cz/public/galleries/33/32288/secondary_b2s1240x560.jpg");
   min-height: 30vh;
 }
+.secondImg:hover,
+.smallBox1:hover,
+.smallBox2:hover {
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.12) !important;
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+  transition: 0.4s;
+  cursor: pointer;
+}
+.smallBoxes {
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+}
 
 @media screen and (min-width: 560px) {
   .secondImg {
     max-width: 500px;
     margin: auto;
+    height: 100%;
   }
   .innerImg p {
     font-size: 20px !important;
     width: 200px !important;
   }
-  .secondaryBox {
+  .secondaryBox1,
+  .secondaryBox2 {
     padding-top: 30px;
   }
   .smallBoxes {
     padding: 0px;
   }
 }
-/* @media screen and (max-width: 767px) {
+@media screen and (min-width: 1024px) {
+  .mainBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+  }
+  .secondaryBox1 {
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
   .secondImg {
-    background-image: url("https://www.vodafone.cz/public/galleries/34/33303/iphone_airpods_primary.jpg");
-    background-position: bottom;
-    min-height: 50vh;
-    background-repeat: no-repeat;
+    max-width: none;
+    width: 95%;
+    min-height: none;
   }
-
-  .innerImg p {
-    font-size: 16px;
-    width: 60%;
+  .smallBoxes {
+    max-width: none;
+    width: 95%;
   }
-} */
+}

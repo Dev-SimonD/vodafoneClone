@@ -3,116 +3,67 @@ import IphoneImg from "../../asssets/nabidkaDoporucujeme/iphone.jpg";
 import ZvyhodneniImg from "../../asssets/nabidkaDoporucujeme/zvyhodneni.jpg";
 import MotorolaImg from "../../asssets/nabidkaDoporucujeme/motorola.png";
 import SimImg from "../../asssets/nabidkaDoporucujeme/sim.png";
+import classes from "./NabidkaTelevize.module.css";
+import NabidkaTarifySmall1 from "../../asssets/nabidkaTarify/tarifyNabidkasmall1.png";
 
-function NabidkaTelevize() {
+function NabidkaVodafone() {
   return (
-    <div>
-      {" "}
-      <div style={{ width: "90vw", margin: "auto" }}>
-        <div
-          style={{
-            maxWidth: "400px",
-            marginBottom: "30px",
-
-            position: "relative",
-            borderRadius: "20px",
-          }}
-          className="moveUpBox"
-        >
-          <img
-            src={IphoneImg}
-            style={{ width: "100%", borderRadius: "20px" }}
-          />
-
-          <div
-            className="position-absolute"
-            style={{
-              position: "absolute",
-              top: "20px",
-              left: "20px",
-              /* width: "50%", */
-            }}
-          >
+    <div className={classes.mainBox}>
+      <div className={classes.secondaryBox1}>
+        <div className={classes.secondImg}>
+          <div className={classes.innerImg}>
             <h2 className="text-black" style={{ fontWeight: "bold" }}>
-              Televize...
+              Podívaná pro celou rodinu
             </h2>
-            <p className="text-black">4 000 Kč výhodněji</p>
             <p
               className="text-black"
-              style={{ width: "150px", fontSize: "14px" }}
+              style={{ width: "150px", fontSize: "14px", fontWeight: "normal" }}
             >
-              Pořiďte si iPhone 13 s neomezeným tarifem výhodněji. Nyní k němu
-              získáte i Apple AirPods jen za 1 777 Kč.
+              Bavte se s vodafone TV
             </p>
-            <button className="btn btn-danger">Chci usetrit</button>
           </div>
         </div>
       </div>
-      <div style={{ width: "90vw", margin: "auto" }}>
-        <div
-          style={{
-            maxWidth: "400px",
-            marginTop: "30px",
-            paddingBottom: "20px",
-            position: "relative",
-          }}
-          className="moveUpBox"
-        >
-          <img
-            src={ZvyhodneniImg}
-            style={{
-              borderRadius: "20px",
-              height: "240px",
-              width: "90vw",
-              objectFit: "cover",
-            }}
-          />
+      <div className={classes.secondaryBox2} style={{ paddingBottom: "20px" }}>
+        <div className={classes.secondImg} id={classes.internetNaDoma}>
+          <div className={classes.innerImg}>
+            <h2 className="text-white" style={{ width: "50%" }}>
+              To nejlepší ze sportu
+            </h2>
+            <p className="text-white" style={{ width: "60%" }}>
+              Fanděte s námi
+            </p>
+          </div>
+        </div>
+      </div>
 
-          <div
-            className="position-absolute"
-            style={{
-              position: "absolute",
-              top: "20px",
-              left: "20px",
-              /* width: "50%", */
-            }}
-          >
-            <div>
-              <h2 className="text-white" style={{ width: "50%" }}>
-                Internet na doma i do mobilu
-              </h2>
-              <p className="text-white" style={{ width: "60%" }}>
-                Za zvýhodněnou cenu díky spojení služeb
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
       <div
-        className="d-flex container"
-        style={{
+        className={`d-flex container ${classes.smallBoxes}`}
+        /* style={{
           justifyContent: "center",
           gap: "10px",
           alignItems: "center",
           width: "100%",
-        }}
+          maxWidth: "500px",
+        }} */
       >
         <div
-          className="centered p-2"
+          className={`centered p-2 ${classes.smallBox1}`}
           style={{
             flexDirection: "column",
             backgroundColor: "white",
-            minWidth: "150px",
+            width: "100%",
             borderRadius: "10px",
+            minHeight: "228px",
           }}
         >
           <img
-            src={MotorolaImg}
+            src={NabidkaTarifySmall1}
             alt="telefon"
             style={{ maxHeight: "150px", maxWidth: "100%" }}
           />
           <div className="centered" style={{ flexDirection: "column" }}>
-            <p className="text-center">Motorola Moto</p>
+            <p className="text-center">Nejlevnější tarify</p>
             <button
               className="btn btn-success"
               style={{ backgroundColor: "#009900" }}
@@ -122,11 +73,13 @@ function NabidkaTelevize() {
           </div>
         </div>
         <div
-          className="centered p-2"
+          className={`centered p-2 ${classes.smallBox2}`}
           style={{
             flexDirection: "column",
             backgroundColor: "white",
+            width: "100%",
             borderRadius: "10px",
+            minHeight: "228px",
           }}
         >
           <img
@@ -135,7 +88,7 @@ function NabidkaTelevize() {
             style={{ maxHeight: "150px", maxWidth: "100%" }}
           />
           <div className="centered" style={{ flexDirection: "column" }}>
-            <p>Neomezene tarify</p>
+            <p>Pro studenty</p>
             <button
               className="btn btn-success"
               style={{ backgroundColor: "#009900" }}
@@ -149,4 +102,4 @@ function NabidkaTelevize() {
   );
 }
 
-export default NabidkaTelevize;
+export default NabidkaVodafone;

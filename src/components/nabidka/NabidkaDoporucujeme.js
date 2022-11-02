@@ -10,7 +10,7 @@ function NabidkaDoporucujeme() {
     <div className={classes.mainBox}>
       <div
         className={
-          classes.secondaryBox
+          classes.secondaryBox1
         } /* style={{ width: "100vw", margin: "auto" }} */
       >
         <div className={classes.secondImg}>
@@ -35,7 +35,7 @@ function NabidkaDoporucujeme() {
           </div>
         </div>
       </div>
-      <div className={classes.secondaryBox} style={{ paddingBottom: "20px" }}>
+      <div className={classes.secondaryBox2} style={{ paddingBottom: "20px" }}>
         <div className={classes.secondImg} id={classes.internetNaDoma}>
           <div className={classes.innerImg}>
             <h2 className="text-white" style={{ width: "50%" }}>
@@ -50,16 +50,16 @@ function NabidkaDoporucujeme() {
 
       <div
         className={`d-flex container ${classes.smallBoxes}`}
-        style={{
+        /* style={{
           justifyContent: "center",
           gap: "10px",
           alignItems: "center",
           width: "100%",
           maxWidth: "500px",
-        }}
+        }} */
       >
         <div
-          className="centered p-2"
+          className={`centered p-2 ${classes.smallBox1}`}
           style={{
             flexDirection: "column",
             backgroundColor: "white",
@@ -84,7 +84,7 @@ function NabidkaDoporucujeme() {
           </div>
         </div>
         <div
-          className="centered p-2"
+          className={`centered p-2 ${classes.smallBox2}`}
           style={{
             flexDirection: "column",
             backgroundColor: "white",
