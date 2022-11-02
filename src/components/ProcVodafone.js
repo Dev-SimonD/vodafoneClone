@@ -8,7 +8,7 @@ import SpolecneImg from "../asssets/procVodafone/spolecne.png";
 function ProcVodafone() {
   return (
     <div className="container">
-      <h1 className={classes.headerText}>Proc Vodafone</h1>
+      <h1 className={classes.headerText}>Proč Vodafone</h1>
       <div className={classes.mainBox}>
         <div className={classes.innerBox}>
           <div className={classes.item}>

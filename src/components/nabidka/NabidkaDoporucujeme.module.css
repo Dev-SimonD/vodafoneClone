@@ -1,4 +1,4 @@
-.main:hover {
+/* .main:hover {
   box-shadow: 0 16px 24px rgba(0, 0, 0, 0.12) !important;
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
@@ -19,3 +19,52 @@
     max-width: 500px;
   }
 }
+ */
+.secondImg {
+  background-image: url("https://www.vodafone.cz/public/galleries/34/33303/iphone_airpods_primary.jpg");
+  margin: 15px 20px;
+  padding-bottom: 0;
+  font-size: 22px;
+  background-size: cover;
+  border-radius: 10px;
+  background-position: bottom;
+  min-height: 50vh;
+  background-repeat: no-repeat;
+}
+.innerImg {
+  padding: 20px;
+}
+#internetNaDoma {
+  background-image: url("https://www.vodafone.cz/public/galleries/33/32288/secondary_b2s1240x560.jpg");
+  min-height: 30vh;
+}
+
+@media screen and (min-width: 560px) {
+  .secondImg {
+    max-width: 500px;
+    margin: auto;
+  }
+  .innerImg p {
+    font-size: 20px !important;
+    width: 200px !important;
+  }
+  .secondaryBox {
+    padding-top: 30px;
+  }
+  .smallBoxes {
+    padding: 0px;
+  }
+}
+/* @media screen and (max-width: 767px) {
+  .secondImg {
+    background-image: url("https://www.vodafone.cz/public/galleries/34/33303/iphone_airpods_primary.jpg");
+    background-position: bottom;
+    min-height: 50vh;
+    background-repeat: no-repeat;
+  }
+
+  .innerImg p {
+    font-size: 16px;
+    width: 60%;
+  }
+} */

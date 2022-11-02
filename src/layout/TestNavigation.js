@@ -120,11 +120,14 @@ function TestNavigation() {
                   />
                 </NavLink>
               </div>
-              <button className={`btn basicBtn ${classes.prejitBtn}`}>
+              <button className=/* {`btn basicBtn ${classes.prejitBtn}`} */"btn btn-light" style={{borderColor:"#333",borderRadius: "5px",
+  marginRight: "20px",
+  marginBottom: "0px",
+  height: "47px"}}>
                 Přejít k nám
               </button>
               <button className={`btn btn-danger ${classes.prihlaseniBtn}`}>
-                Přihlášení
+                Můj Vodafone
               </button>
             </div>
           </div>

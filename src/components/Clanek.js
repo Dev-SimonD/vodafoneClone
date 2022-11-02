@@ -3,7 +3,10 @@ import Card from "../UI/Card";
 
 function Clanek() {
   return (
-    <div className="row" style={{ width: "100%" }}>
+    <div
+      className="row"
+      style={{ width: "100%", margin: "0px", padding: "0px" }}
+    >
       <Card>
         <div className="col-xs2 col-sm3 px-3 py-1">
           <h1 style={{ lineHeight: "1.3", fontSize: "18px" }}>
