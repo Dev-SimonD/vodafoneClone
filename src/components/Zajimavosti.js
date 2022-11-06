@@ -29,7 +29,10 @@ function Zajimavosti() {
       </div>
 
       <h1 className={classes.headerText2}>Mohlo by vás zajímat</h1>
-      <div className="centered" style={{ justifyContent: "space-evenly" }}>
+      <div
+        className={`centered container`}
+        style={{ justifyContent: "space-evenly" }}
+      >
         <div className={classes.storeBox}>
           <img
             src="https://www.vodafone.cz/public/galleries/29/28151/512x480__ipad_mini_2021_celo_zada-2-1.png

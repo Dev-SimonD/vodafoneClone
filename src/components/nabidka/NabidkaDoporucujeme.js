@@ -7,7 +7,7 @@ import SimImg from "../../asssets/nabidkaDoporucujeme/sim.png";
 
 function NabidkaDoporucujeme() {
   return (
-    <div className={classes.mainBox}>
+    <div className={`container ${classes.mainBox}`}>
       <div
         className={
           classes.secondaryBox1

@@ -21,7 +21,7 @@ function TestNavigation() {
   const toggle = () => setModal(!modal);
   return (
     <div>
-      <div>
+      <div className="">
         <div className={classes.navigation}>
           <div className="ms-2">
             <NavLink

@@ -4,7 +4,7 @@ import classes from "./Clanek.module.css";
 
 function Clanek() {
   return (
-    <div className={classes.mainBox} style={{ width: "100%" }}>
+    <div className={`container ${classes.mainBox}`} style={{ width: "100%" }}>
       <Card>
         <div className="col-xs2 col-sm3 ">
           <img

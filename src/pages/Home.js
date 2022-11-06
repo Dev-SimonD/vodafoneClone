@@ -14,9 +14,9 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className={` ${classes.main}`}>
+    <div className={`${classes.main}`}>
       <div style={{ width: "100vw", margin: "auto" }}>
-        <div>
+        <div className="container">
           <div className={classes.secondImg}>
             <div className={classes.innerImg}>
               <h2 className="text-white" style={{ fontWeight: "bold" }}>

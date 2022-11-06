@@ -3,8 +3,9 @@
   overflow: auto;
   white-space: nowrap;
   scrollbar-width: none;
-  margin-bottom: 20px;
-  padding: 20px;
+  /*   margin-bottom: 20px;
+ */
+  padding: 0 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;

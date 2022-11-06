@@ -3,8 +3,8 @@ import classes from "./IkonyNabidka.module.css";
 
 function IkonyNabidka() {
   return (
-    <div>
-      <div className={` ${classes.scrollmenu}`}>
+    <div className="container">
+      <div className={`container ${classes.scrollmenu}`}>
         <a href="#">
           <div>
             {/*  Mobilni Telefony */}
