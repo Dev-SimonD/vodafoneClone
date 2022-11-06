@@ -25,6 +25,23 @@
   font-weight: bold;
   padding-top: 30px;
 }
+.spojteLarge {
+  display: none;
+}
+.spojteLargeHeader {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: bold;
+  padding-top: 30px;
+  display: none;
+}
+.myAppsLarge {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 .footerIcons {
   /*  flex-wrap: wrap; */
 }
@@ -64,6 +81,28 @@
   }
 
   .myAccordion {
+    display: none !important;
+  }
+  .spojte {
+    display: none;
+  }
+  .socialIcon {
+    display: none !important;
+  }
+  .socialIcon2 {
+    display: block;
+    padding-inline: 10px;
+    margin-left: 10px;
+  }
+  .spojteLarge {
+    display: block;
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+  .spojteLargeHeader {
+    display: block;
+  }
+  .footerIcons {
     display: none !important;
   }
 }

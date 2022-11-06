@@ -8,6 +8,9 @@ import Nabidka from "../components/Nabidka";
 import IkonyNabidka from "../components/IkonyNabidka";
 import ProcVodafone from "../components/ProcVodafone";
 import Zajimavosti from "../components/Zajimavosti";
+import imgapp1 from "../asssets/home/app1.png";
+import imgapp2 from "../asssets/home/app2.png";
+import imgapp3 from "../asssets/home/app3.png";
 
 const Home = () => {
   useEffect(() => {
@@ -54,6 +57,16 @@ const Home = () => {
         >
           Více článků
         </button>
+      </div>
+      <div className={classes.apps}>
+        <h1 className={classes.appsHeader}>
+          Mějte přehled o svých službách díky aplikaci Můj Vodafone
+        </h1>
+        <div className={classes.appsInner}>
+          <img src={imgapp1} />
+          <img src={imgapp2} />
+          <img src={imgapp3} />
+        </div>
       </div>
     </div>
   );

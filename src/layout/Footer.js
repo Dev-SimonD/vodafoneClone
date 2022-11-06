@@ -14,6 +14,60 @@ const Footer = () => {
       data-aos-once="true"
       data-aos="fade-up"
     >
+      <div className={`container ${classes.myAppsLarge}`}>
+        <h1 className={classes.spojteLargeHeader}>Spojte se s Vodafonem</h1>
+        <div className={`centered ${classes.spojteLarge}`}>
+          <SocialIcon
+            url="#"
+            network="facebook"
+            bgColor="white"
+            fgColor="black"
+            style={{ height: 33, width: 33 }}
+            className={classes.socialIcon2}
+          />
+          <SocialIcon
+            url="#"
+            network="twitter"
+            bgColor="white"
+            fgColor="black"
+            style={{ height: 33, width: 33 }}
+            className={classes.socialIcon2}
+          />
+          <SocialIcon
+            url="#"
+            network="instagram"
+            bgColor="white"
+            fgColor="black"
+            style={{ height: 33, width: 33 }}
+            className={classes.socialIcon2}
+          />
+          <SocialIcon
+            url="#"
+            network="youtube"
+            bgColor="white"
+            style={{ height: 33, width: 33 }}
+            fgColor="black"
+            className={classes.socialIcon2}
+          />
+          <SocialIcon
+            url="#"
+            network="email"
+            bgColor="white"
+            fgColor="black"
+            style={{ height: 33, width: 33 }}
+            className={classes.socialIcon2}
+          />
+          <SocialIcon
+            url="#"
+            network="linkedin"
+            bgColor="white"
+            fgColor="black"
+            style={{ height: 33, width: 33 }}
+            className={classes.socialIcon2}
+          />
+        </div>
+      </div>
+
       <div className={`container row footerList ${classes.footerList}`}>
         <ul className="col-sm-3" style={{ fontSize: "16px" }}>
           <li className="text-white" style={{ fontSize: "20px" }}>
@@ -318,21 +372,23 @@ const Footer = () => {
 
       <hr style={{ color: "white", margin: "0" }}></hr>
       <div style={{ backgroundColor: "#252525" }}>
-        <h2 className="text-white pt-4 ps-2">English</h2>
-        <ul className={classes.bottomul}>
-          <li>Mapa webu</li>
-          <li>Právní podmínky</li>
-          <li>Ochrana soukromí</li>
-        </ul>
-        <div className="d-flex justify-content-center align-items-center">
-          <p
-            className="container"
-            style={{ color: "#979797", fontSize: "14px", flexWrap: "wrap" }}
-          >
-            Copyright © 2022 Vodafone Czech Republic a.s.{" "}
-          </p>
-          <div>
-            <img src={vodafoneGrey} alt="logo" style={{ padding: "20px" }} />
+        <div className="container">
+          <h2 className="text-white pt-4 ps-2">English</h2>
+          <ul className={classes.bottomul}>
+            <li>Mapa webu</li>
+            <li>Právní podmínky</li>
+            <li>Ochrana soukromí</li>
+          </ul>
+          <div className="d-flex justify-content-center align-items-center">
+            <p
+              className="container"
+              style={{ color: "#979797", fontSize: "14px", flexWrap: "wrap" }}
+            >
+              Copyright © 2022 Vodafone Czech Republic a.s.{" "}
+            </p>
+            <div>
+              <img src={vodafoneGrey} alt="logo" style={{ padding: "20px" }} />
+            </div>
           </div>
         </div>
       </div>

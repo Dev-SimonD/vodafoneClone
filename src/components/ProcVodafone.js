@@ -7,7 +7,7 @@ import SpolecneImg from "../asssets/procVodafone/spolecne.png";
 
 function ProcVodafone() {
   return (
-    <div className="container">
+    <div className="container" style={{ maxWidth: "none" }}>
       <h1 className={classes.headerText}>Proč Vodafone</h1>
       <div className={classes.mainBox}>
         <div className={classes.innerBox}>
