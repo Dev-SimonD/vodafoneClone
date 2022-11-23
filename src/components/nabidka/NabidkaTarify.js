@@ -7,7 +7,7 @@ import classes from "./NabidkaTarify.module.css";
 
 function NabidkaTarify() {
   return (
-    <div className={classes.mainBox}>
+    <div className={`container ${classes.mainBox}`}>
       <div className={classes.secondaryBox1}>
         <div className={classes.secondImg}>
           <div className={classes.innerImg}>

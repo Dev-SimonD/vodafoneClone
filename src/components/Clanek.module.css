@@ -18,7 +18,7 @@
     grid-template-columns: 1fr 1fr;
   }
   .clanekImage {
-    height: 180px;
+    height: 130px;
   }
 }
 @media screen and (min-width: 1024px) {

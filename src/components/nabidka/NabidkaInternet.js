@@ -8,7 +8,7 @@ import NabidkaTarifySmall1 from "../../asssets/nabidkaTarify/tarifyNabidkasmall1
 
 function NabidkaInternet() {
   return (
-    <div className={classes.mainBox}>
+    <div className={`container ${classes.mainBox}`}>
       <div className={classes.secondaryBox1}>
         <div className={classes.secondImg}>
           <div className={classes.innerImg}>

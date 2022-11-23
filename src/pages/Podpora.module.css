@@ -1,5 +1,5 @@
 .main {
-  padding-top: 37px;
+  min-height: 20vh;
 }
 @media screen and (min-width: 1024px) {
   .main {
