@@ -119,10 +119,7 @@ const Footer = () => {
           <li>Další online řešení</li>
         </ul>
       </div>
-      <div
-        class={` accordion container ${classes.myAccordion}`}
-        id="accordionExample"
-      >
+      <div class={` accordion ${classes.myAccordion}`} id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingEight">
             <button
@@ -371,8 +368,11 @@ const Footer = () => {
       </div>
 
       <hr style={{ color: "white", margin: "0" }}></hr>
-      <div style={{ backgroundColor: "#252525" }}>
-        <div className="container">
+      <div
+        className={classes.footerBottomSmall}
+        style={{ backgroundColor: "#252525" }}
+      >
+        <div className={`container ${classes.footerBottomSmallInner}`}>
           <h2 className="text-white pt-4 ps-2">English</h2>
           <ul className={classes.bottomul}>
             <li>Mapa webu</li>
@@ -382,7 +382,12 @@ const Footer = () => {
           <div className="d-flex justify-content-center align-items-center">
             <p
               className="container"
-              style={{ color: "#979797", fontSize: "14px", flexWrap: "wrap" }}
+              style={{
+                color: "#979797",
+                fontSize: "14px",
+                flexWrap: "wrap",
+                textAlign: "left",
+              }}
             >
               Copyright © 2022 Vodafone Czech Republic a.s.{" "}
             </p>

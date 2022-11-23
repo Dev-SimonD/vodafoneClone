@@ -5,7 +5,7 @@ function Kosik() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  return <div className={classes.main}>Kosik Page 2</div>;
+  return <div className={classes.main}>Kosik</div>;
 }
 
 export default Kosik;

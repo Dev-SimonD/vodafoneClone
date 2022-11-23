@@ -1,4 +1,4 @@
-.headerText {
+/* .headerText {
   font-size: 32px;
   line-height: 40px;
   text-align: center;
@@ -51,6 +51,15 @@
 .main {
   overflow-x: hidden;
   background-color: #f4f4f4;
+}
+@media screen and (min-width: 1024px) {
+  .main {
+    padding-top: 100px;
+  }
+}
+ */
+.main {
+  min-height: 20vh;
 }
 @media screen and (min-width: 1024px) {
   .main {

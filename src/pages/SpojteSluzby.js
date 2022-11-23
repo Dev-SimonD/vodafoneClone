@@ -9,7 +9,8 @@ function SpojteSluzby() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className={`container ${classes.main}`}>
+    <div className={classes.main}>Spojte sluzby</div>
+    /* <div className={`container ${classes.main}`}>
       <div style={{ width: "90vw", margin: "auto" }} className="pt-4">
         <div
           style={{
@@ -32,7 +33,7 @@ function SpojteSluzby() {
               position: "absolute",
               top: "20px",
               left: "20px",
-              /* width: "50%", */
+             
             }}
           >
             <h2 className="text-white" style={{ fontWeight: "bold" }}>
@@ -92,10 +93,9 @@ function SpojteSluzby() {
         Často kladené dotazy
       </h1>
       <div>
-        {/*         <CastoKladeneDotazy />
-         */}{" "}
+       
       </div>
-    </div>
+    </div> */
   );
 }
 

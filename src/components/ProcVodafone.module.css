@@ -38,6 +38,7 @@
 .itemLarge p {
   color: white;
   font-size: 16px;
+  font-weight: normal;
 }
 .item {
   display: flex;

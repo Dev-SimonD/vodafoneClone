@@ -1,7 +1,7 @@
 .myAccordion {
   --bs-accordion-bg: none;
   --bs-accordion-border-color: none;
-  padding-top: 20px;
+  padding: 20px;
 }
 .bottomul {
   padding-left: 10px;
@@ -17,6 +17,7 @@
 .greytext {
   color: #979797;
 }
+
 .spojte {
   text-align: center;
   color: white;
@@ -74,6 +75,12 @@
   padding-top: 40px;
   display: none;
 }
+.bottomFooter {
+  padding: 20px;
+}
+/* .footerBottomSmallInner {
+  max-width: none;
+} */
 
 @media only screen and (min-width: 768px) {
   .footerList {
@@ -109,5 +116,11 @@
 @media only screen and (max-width: 767px) {
   .footerList {
     display: none !important;
+  }
+  .footerBottomSmall {
+    max-width: none;
+  }
+  .footerBottomSmallInner {
+    margin: 0;
   }
 }
