@@ -5,7 +5,18 @@ function Kosik() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  return <div className={classes.main}>Kosik</div>;
+  return (
+    <div
+      className={classes.main}
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      Kosik Page
+    </div>
+  );
 }
 
 export default Kosik;

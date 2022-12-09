@@ -5,7 +5,18 @@ function Internet() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  return <div className={classes.main}>Internet</div>;
+  return (
+    <div
+      className={classes.main}
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      Internet Page
+    </div>
+  );
 }
 
 export default Internet;

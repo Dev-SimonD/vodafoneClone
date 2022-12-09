@@ -5,7 +5,18 @@ function Podpora() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  return <div className={classes.main}>Podpora</div>;
+  return (
+    <div
+      className={classes.main}
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      Podpora Page
+    </div>
+  );
 }
 
 export default Podpora;

@@ -9,7 +9,16 @@ function SpojteSluzby() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className={classes.main}>Spojte sluzby</div>
+    <div
+      className={classes.main}
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      Spojte sluzby Page
+    </div>
     /* <div className={`container ${classes.main}`}>
       <div style={{ width: "90vw", margin: "auto" }} className="pt-4">
         <div
